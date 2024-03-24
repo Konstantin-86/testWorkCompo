@@ -1,0 +1,25 @@
+:root {
+  --container-width: 1610px;
+  --container-padding: 5px;
+
+  --secondFamily: "VelaSans";
+
+  --blackColor: #071435;
+  --blueColor: #1551e5;
+  --hoverColor: #316cff;
+  --redColor: #ff3d71;
+}
+
+body {
+  font-family: "Gotham", sans-serif;
+  font-weight: 400;
+  color: var(--blackColor);
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  padding: 0 var(--container-padding);
+  max-width: var(--container-width);
+  margin: 0 auto;
+}

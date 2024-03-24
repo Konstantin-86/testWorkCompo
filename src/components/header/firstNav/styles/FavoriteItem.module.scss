@@ -1,0 +1,24 @@
+@import "../../../../style/media.scss";
+.inner {
+  /* width: 120px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .line {
+    width: 1px;
+    height: 48px;
+    background-color: #e2e4f0;
+  }
+  svg {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    cursor: pointer;
+    margin: 0 24px;
+  }
+}
+.fullHeart {
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+}

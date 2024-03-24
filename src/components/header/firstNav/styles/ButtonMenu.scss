@@ -1,0 +1,19 @@
+@import "../../../../style//media.scss";
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--blueColor);
+  width: 128px;
+  border-radius: 8px;
+  padding: 12px 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.2s ease-in;
+  @include hover {
+    background-color: var(--hoverColor);
+  }
+}

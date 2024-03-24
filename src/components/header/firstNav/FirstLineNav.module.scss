@@ -1,0 +1,38 @@
+@import "../../../style/media.scss";
+.nav {
+  padding: 15px 0;
+}
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 24px;
+  gap: 24px;
+}
+.itemSearch {
+  flex-grow: 1;
+}
+@include desktop {
+  .list {
+    justify-content: start;
+  }
+  .itemMenu {
+    margin-right: auto;
+  }
+  .itemSearch,
+  .itemFavorite {
+    display: none;
+  }
+}
+@include mobile {
+  .itemBusket,
+  .itemPerson {
+    display: none;
+  }
+  .list {
+    justify-content: space-between;
+  }
+  .itemMenu {
+    margin-right: 0;
+  }
+}

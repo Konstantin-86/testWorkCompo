@@ -1,0 +1,62 @@
+@import "../../../../style/media.scss";
+.nav {
+  padding: 12px 24px;
+  border-top: 1px solid #f2f6ff;
+  border-bottom: 1px solid #f2f6ff;
+  margin-bottom: 32px;
+}
+.nav,
+.list,
+.list2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  @include mobile {
+    justify-content: start;
+  }
+}
+.list {
+  gap: 24px;
+  @include mobile {
+    display: none;
+  }
+  li {
+    a {
+      padding-block: 15px;
+      font-weight: 500;
+      font-size: 14px;
+      color: var(--blackColor);
+    }
+  }
+}
+.list2 {
+  gap: 24px;
+}
+.item2__linkMessage {
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 11px 12px;
+  background-color: #f2f6ff;
+  color: var(--blueColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.item2__linkPercent {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--blueColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.item2__linkBlog {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--blueColor);
+}

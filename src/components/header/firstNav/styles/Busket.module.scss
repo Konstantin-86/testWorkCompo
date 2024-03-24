@@ -1,0 +1,12 @@
+.busket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #f2f6ff;
+  padding: 12px 24px;
+  gap: 12px;
+  color: var(--blueColor);
+  font-weight: 700;
+  font-size: 14px;
+}
