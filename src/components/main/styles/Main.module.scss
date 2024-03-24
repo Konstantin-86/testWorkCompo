@@ -11,4 +11,9 @@
 }
 .inner {
   display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+.mainItem {
+  min-width: 0;
 }

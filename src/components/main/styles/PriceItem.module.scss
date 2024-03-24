@@ -1,0 +1,149 @@
+.inner {
+  margin-top: 24px;
+  border-right: 1px solid #e2e4f0;
+  padding-right: 48px;
+  margin-bottom: 48px;
+}
+.redCost {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--redColor);
+  margin-bottom: 24px;
+}
+.mainCost {
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  span {
+    font-size: 16px;
+    margin-left: 16px;
+    padding: 5.5px 8px;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: var(--redColor);
+  }
+}
+.innerSwitch {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e2e4f0;
+  margin-bottom: 32px;
+  .sumSwitch {
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #f2f5f9;
+    color: #828ead;
+  }
+  .switchOn {
+    position: relative;
+    width: 40px;
+    border-radius: 32px;
+    height: 24px;
+    background-color: var(--blueColor);
+    transition: all 0.2s;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 2px;
+    }
+  }
+  .switchOff {
+    position: relative;
+    width: 40px;
+    border-radius: 32px;
+    height: 24px;
+    background-color: #828ead;
+    transition: all 0.2s;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 2px;
+    }
+  }
+  .labelSwitch {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+.deliveryInner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+  .deliveryItem {
+    font-size: 14px;
+    font-weight: 700;
+    p {
+      padding-top: 8px;
+      font-size: 12px;
+      font-weight: 400;
+      color: #828ead;
+    }
+  }
+}
+.buttonInner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  .addToCart {
+    max-width: 284px;
+    width: 100%;
+    .buttonCart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 19px 0;
+      background-color: var(--blueColor);
+      border-radius: 8px;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+}
+.activeCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border: 2px solid var(--blueColor);
+  border-radius: 8px;
+  color: #071435;
+  font-weight: 500;
+  font-size: 16px;
+  .plus {
+    padding: 4px;
+    margin-right: 10px;
+  }
+  .minus {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    margin-left: 10px;
+  }
+}
+.favorite {
+  padding: 16px 24px;
+  background-color: #f2f6ff;
+  border-radius: 8px;
+}
