@@ -1,8 +1,10 @@
+import styles from "./styles/DescriptionItem.module.scss";
+
 const DescriptionItem = () => {
   return (
     <div>
-      <h2>Описание товара</h2>
-      <p>
+      <h2 className={styles.title}>Описание товара</h2>
+      <p className={styles.text}>
         Создание приверженного покупателя специфицирует неопровержимый
         комплексный анализ ситуации. CTR существенно индуцирует из ряда вон
         выходящий SWOT-анализ. Воздействие на потребителя определяет

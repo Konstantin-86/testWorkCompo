@@ -1,4 +1,10 @@
+@import "../../../style/media.scss";
 .wrap {
   display: flex;
-  flex-wrap: wrap;
+  @include desktop {
+    justify-content: center;
+  }
+  @include tablet {
+    flex-wrap: wrap;
+  }
 }

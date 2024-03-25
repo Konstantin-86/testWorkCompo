@@ -1,8 +1,13 @@
+@import "../../../style/media.scss";
 .inner {
   margin-top: 24px;
   border-right: 1px solid #e2e4f0;
   padding-right: 48px;
   margin-bottom: 48px;
+  @include mobile-s {
+    border-right: none;
+    padding-right: 0;
+  }
 }
 .redCost {
   font-size: 14px;
@@ -11,6 +16,7 @@
   margin-bottom: 24px;
 }
 .mainCost {
+  white-space: nowrap;
   font-size: 32px;
   font-weight: 700;
   display: flex;
@@ -34,6 +40,7 @@
   margin-bottom: 32px;
   .sumSwitch {
     padding: 8px;
+    white-space: nowrap;
     border-radius: 8px;
     font-size: 14px;
     font-weight: 700;
@@ -103,6 +110,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   .addToCart {
     max-width: 284px;
     width: 100%;
@@ -134,12 +142,19 @@
   .plus {
     padding: 4px;
     margin-right: 10px;
+    &:active {
+      background-color: #cccccca7;
+    }
   }
   .minus {
     display: flex;
     align-items: center;
     padding: 4px;
+    padding-block: 15px;
     margin-left: 10px;
+    &:active {
+      background-color: #cccccca7;
+    }
   }
 }
 .favorite {

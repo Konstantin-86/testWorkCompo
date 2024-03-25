@@ -17,7 +17,7 @@ const Main = () => {
         <div className={styles.mainItem}>
           <Slider />
         </div>
-        <div className={styles.mainItem}>
+        <div className={`${styles.mainItem} ${styles.content}`}>
           <Content />
         </div>
       </div>

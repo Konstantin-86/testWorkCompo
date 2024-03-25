@@ -5,20 +5,15 @@ import DescriptionItem from "./DescriptionItem";
 
 const Content = () => {
   return (
-    <div className={styles.inner}>
+    <>
       <div className={styles.wrap}>
-        <div className={styles.priceItem}>
-          <PriceItem />
-        </div>
-        <div className={styles.characteristicItem}>
-          <CharacteristicItem />
-        </div>
+        <PriceItem />
+        <CharacteristicItem />
       </div>
-
       <div className={styles.descriptionItem}>
         <DescriptionItem />
       </div>
-    </div>
+    </>
   );
 };
 
